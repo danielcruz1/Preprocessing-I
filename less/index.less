@@ -57,22 +57,137 @@ html, body {
     height: 100%;
 }
 
+@padding20: 20px;
+@h1-font-size: 1.2rem;
+
 body {
-	width: 1080px;
-	margin: 0 auto;
-}
+	width: 800px;
+	margin: auto;
 
-nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	border: 1px solid red;
-}
+	@media (max-width: 500px) {
+		width: 400px;
+		background: red;
+	}
+	
+	header nav {
+		display: flex;
+		justify-content: flex-end;	
+	
+		a {
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 10px;
+		}
+	}
 
-nav a {
-	text-decoration: none;
-	font-size: 20px;
-	padding: 10px;
-	border: 1px solid yellow;
-}
+	.top-section {
+		background: lightgray;
+		padding: @padding20;
+		border-radius: 10px;
 
+		img {
+			width: 20%;
+			height: auto;
+			padding-bottom: @padding20;
+		}
+
+		.top-half {
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgb(158, 158, 158);
+	
+			h1 {
+				font-size: 2rem;
+				padding-bottom: 10px;			
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+
+		.bottom-half {
+			padding-top: 20px;
+
+			h1 {
+				font-size: 1rem;
+				padding-bottom: @padding20;
+			}
+	
+			button { 
+				font-size: 1rem;
+				background-color: red; /* Green */
+				border: none;
+				color: black;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				border-radius: 25px;
+			}
+		}		
+	}
+
+	.middle-section {
+		padding: @padding20;
+		display: flex;
+		justify-content: space-between;
+
+		.mid-sec-left {
+			width: 49%;
+
+			h1 {
+				font-size: @h1-font-size;
+				padding-bottom: 10px;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+
+		.mid-sec-right {
+			width: 49%;
+
+			h1 {
+				font-size: @h1-font-size;
+				padding-bottom: 10px;
+			}
+			
+			ul {
+				font-size: 1rem;
+				list-style-type: square;
+				list-style-position: inside;
+				padding-left: 10px;
+			}	
+		}
+	}
+
+	.bottom-section {
+		padding: @padding20;
+
+		h1 {
+			font-size: @h1-font-size;
+			padding-bottom: @padding20;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+		}
+
+		table {
+			width: 100%;
+
+			th, td {
+				height: 30px;
+				padding: 5px;
+				text-align: center;
+			}
+		}
+	}
+
+	footer {
+		padding: 50px;
+		text-align: center;
+		background: lightgray;
+		border-radius: 10px;
+	}
+}
