@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Fira Code', monospace;
 }
 body {
   width: 800px;
@@ -141,7 +142,6 @@ body {
 @media (max-width: 500px) {
   body {
     width: 400px;
-    background: red;
   }
 }
 body header nav {
@@ -152,6 +152,7 @@ body header nav a {
   text-decoration: none;
   font-size: 1rem;
   padding: 10px;
+  color: red;
 }
 body .top-section {
   background: lightgray;
@@ -159,7 +160,7 @@ body .top-section {
   border-radius: 10px;
 }
 body .top-section img {
-  width: 20%;
+  width: 30%;
   height: auto;
   padding-bottom: 20px;
 }
@@ -183,14 +184,23 @@ body .top-section .bottom-half h1 {
 }
 body .top-section .bottom-half button {
   font-size: 1rem;
+  font-family: 'Fira Code', monospace;
   background-color: red;
-  /* Green */
   border: none;
-  color: black;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   border-radius: 25px;
+  box-shadow: 0 9px #999;
+}
+body .top-section .bottom-half button:hover {
+  background-color: #810606;
+}
+body .top-section .bottom-half button:active {
+  background-color: #810606;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 body .middle-section {
   padding: 20px;
@@ -202,7 +212,7 @@ body .middle-section .mid-sec-left {
 }
 body .middle-section .mid-sec-left h1 {
   font-size: 1.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 body .middle-section .mid-sec-left p {
   font-size: 1rem;
@@ -212,7 +222,7 @@ body .middle-section .mid-sec-right {
 }
 body .middle-section .mid-sec-right h1 {
   font-size: 1.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 body .middle-section .mid-sec-right ul {
   font-size: 1rem;
@@ -235,6 +245,9 @@ body .bottom-section td {
 body .bottom-section table {
   width: 100%;
 }
+body .bottom-section table tr:hover {
+  background-color: lightgreen;
+}
 body .bottom-section table th,
 body .bottom-section table td {
   height: 30px;
@@ -247,3 +260,34 @@ body footer {
   background: lightgray;
   border-radius: 10px;
 }
+/* ************************************ CONTACT PAGE ***************************/
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: red;
+  box-shadow: 0 9px #999;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #810606;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*****************************************************************************/
