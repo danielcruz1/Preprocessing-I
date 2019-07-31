@@ -108,6 +108,8 @@ body {
 
 		.bottom-half {
 			padding-top: 20px;
+			
+			.top-half();								/*MIXIN*/
 
 			h1 {
 				font-size: 1rem;
@@ -127,16 +129,18 @@ body {
 				box-shadow: 0 9px #999;
 			}
 
-			button:hover {background-color: rgb(129, 6, 6)}
+			button:hover {
+				background-color: rgb(129, 6, 6);
+			}
 
 			button:active {
-			background-color: rgb(129, 6, 6);
-			box-shadow: 0 5px #666;
-			transform: translateY(4px);
+				background-color: rgb(129, 6, 6);
+				box-shadow: 0 5px #666;
+				transform: translateY(4px);
 			}
 		}		
 	}
-
+	
 	.middle-section {
 		padding: @padding20;
 		display: flex;
