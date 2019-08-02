@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+
   font-family: 'Fira Code', monospace;
 }
 body {
@@ -305,3 +306,6 @@ input[type=submit]:hover {
   padding: 20px;
 }
 /*****************************************************************************/
+
+}
+
